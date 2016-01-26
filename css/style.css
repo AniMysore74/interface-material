@@ -1,0 +1,165 @@
+/*=========== KHMD SITE CSS ==============*/
+
+/*******************************************
+                1) FONTS
+*******************************************/
+@font-face{
+  font-family: 'Syncopate-Regular';
+  src: url('../fonts/Syncopate-Regular.ttf');
+}
+/*******************************************
+              2) HTML, BODY
+*******************************************/
+html, body {
+  height: 100%;
+}
+
+/*******************************************
+            3) NAVBAR AND NAVMENU
+*******************************************/
+.navbar-toggle {
+  float: left;
+  margin-left: 15px;
+}
+.navmenu {
+  z-index: 1;
+}
+nav.navmenu > .navmenu-brand {
+  color: rgba(255,255,255,0.84);
+  font-family: 'Syncopate-Regular';
+  font-size: 25px;
+  line-height: 60px;
+  display: inline;
+  vertical-align: middle; 
+}
+.navmenu-brand img {
+  padding: 5px;
+  max-height: 30px;
+  display: inline;
+}
+@media (min-width: 0) {
+  .navbar-toggle {
+    display: block; /* force showing the toggle */
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+    right: auto;
+    background: none;
+    border: none;
+  }
+}
+nav.navmenu > .navmenu-nav > li {
+  border-bottom: 1px solid #546e7a;
+}
+nav.navmenu > .navmenu-nav > li:first-child {
+  border-top: 1px solid #546e7a;
+}
+nav.navmenu > .navmenu-nav > .active {
+  border-bottom: 1px solid #455a64;
+}
+nav.navmenu > .navmenu-nav > li > a {
+  padding: 20px 15px;
+  color: rgba(255,255,255,0.84);
+}
+.navmenu > .navmenu-nav > .active > a {
+  background-color: #546e7a;
+  color: rgba(255, 255, 255, 0.84);
+}
+nav.navmenu > .navmenu-nav > li > a:hover {
+  background-color: #546e7a;
+  border-top: 1px solid #455a64;
+  border-bottom: 1px solid #455a64;
+}
+nav.navmenu > .navmenu-nav > li.active > a:hover {
+  background-color: #455a64;
+  border-top: 1px solid #37474f;
+  border-bottom: 1px solid #37474f;
+}
+/*******************************************
+           4) CANVAS, CONTAINERS
+*******************************************/
+.canvas {
+  position: relative;
+  left: 0;
+  z-index: 2;
+  min-height: 100%;
+  padding: 0;
+  background-color: #fff;
+}
+
+.canvas > .container
+{
+  background-color: #fff;
+  margin-top:0; 
+  padding: 0;
+}
+/*******************************************
+                5) LANDER
+*******************************************/
+.lander {
+  padding-top: 50px;
+  height: 100vh;
+  position: relative;
+  margin-bottom: 10px;
+}
+.main-heading {
+	text-align: center;
+  font-family: 'Syncopate-Regular';
+}
+.main-heading h1 {
+  display: inline;
+	font-family: 'Syncopate-Regular';
+  line-height: 100px; 
+	font-size: 50px;
+  vertical-align: middle;
+}
+.main-heading h2 {
+	font-size: 20px;
+}
+.main-heading img {
+  padding: 20px;
+  max-height: 100px;
+  display: inline;
+}
+.video div img {
+  height: 100%;
+  max-height:400px; 
+  width: 100%;
+}
+/*******************************************
+                6) About
+*******************************************/
+.about {
+  position: relative;
+  padding: 60px;
+}
+.about .jumbotron > .row > div > img {
+  width: 100%;
+}
+.about p {
+  padding: 5px;
+  font-size: 1.3em;
+}
+@media (max-width: 992px) {
+  .about {
+    padding: 10px;
+  }
+}
+/*******************************************
+                  7) Events
+*******************************************/
+.events {
+  padding-top: 30px;
+  height: 100vh;
+}
+.events header span {
+  font-family: 'Syncopate-Regular';
+}
+.events .row > div {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.events .card .card-image {
+  height: 85%;
+}
